@@ -1,0 +1,154 @@
+/* 列表页专有的CSS */
+.nav {
+    overflow: hidden;
+}
+
+.sk {
+    position: absolute;
+    top: 43px;
+    left: 185px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+
+.sk_list {
+    float: left;
+}
+
+.sk_list ul li {
+    float: left;
+}
+
+.sk_list ul li a {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 28px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.sk_con {
+    float: left;
+}
+
+.sk_con ul li {
+    float: left;
+}
+
+.sk_con ul li a {
+    height: 45px;
+    line-height: 50px;
+    padding: 0 22px;
+    font-size: 14px;
+}
+
+.sk_con ul li:last-child a::after {
+    font-family: 'iconfont';
+    content: '\e7b2';
+    font-size: 20px;
+    /* 图标利用垂直对齐调整数值来居中 */
+    vertical-align: -2px;
+}
+
+.sk_con ul li:last-child:hover::after {
+    color: #c81623;
+
+}
+
+.sk_bd ul {
+    margin-top: 25px;
+}
+
+.sk_bd ul li {
+    overflow: hidden;
+    float: left;
+    width: 290px;
+    height: 460px;
+    margin-right: 13px;
+    border: 1px solid transparent;
+}
+
+.sk_bd ul li:hover {
+    border: 1px solid red;
+}
+
+.sk_bd ul li:nth-child(4n) {
+    margin: 0;
+}
+
+.sk_bd ul li img {
+    width: 280px;
+    height: 290px;
+    margin: 0 13px;
+}
+
+.sk_bd ul li h4 {
+    margin: 0 13px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sk_bd ul .newprice {
+    margin: 10px 13px 0;
+    font-size: 22px;
+    color: #e60012;
+    font-weight: 700;
+}
+
+.sk_bd ul .oldprice {
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.dynamic {
+    width: 100%;
+    height: 41px;
+    line-height: 41px;
+    font-size: 14px;
+    margin: 0 13px;
+}
+
+.dynamic span {
+    float: left;
+}
+
+.dynamic .status_bar {
+    float: left;
+    padding: 1px;
+    width: 133px;
+    height: 13px;
+    margin: 14px 5px;
+    line-height: 13px;
+    border: 1px solid #ed282e;
+    border-radius: 7px;
+    transition: width 1s;
+}
+
+.dynamic .status_bar_in {
+    width: 0%;
+    height: 9px;
+    border-radius: 6px;
+    background-color: #ed282e;
+    transition: all .5s;
+}
+
+.dynamic .status_bar:hover .status_bar_in {
+    width: 87%;
+}
+
+.dynamic .remiander {
+    font-size: 16px;
+    color: #e12228;
+}
+
+.sk_bd .Grab_it_Now {
+    display: block;
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    background-color: #b1191a;
+    font-size: 20px;
+    color: #ffffff;
+}

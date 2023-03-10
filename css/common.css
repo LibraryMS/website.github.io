@@ -1,0 +1,360 @@
+/* 字体图标 */
+/* @font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?ec7n3s');
+    src: url('../fonts/icomoon.eot?ec7n3s#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?ec7n3s') format('truetype'),
+        url('../fonts/icomoon.woff?ec7n3s') format('woff'),
+        url('../fonts/icomoon.svg?ec7n3s#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+} */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../afont/iconfont.woff2?t=1677623455938') format('woff2'),
+        url('../afont/iconfont.woff?t=1677623455938') format('woff'),
+        url('../afont/iconfont.ttf?t=1677623455938') format('truetype');
+}
+
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 快捷导航模块 */
+.shortcut {
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;
+}
+
+.fl {
+    float: left;
+    ;
+}
+
+.fr {
+    float: right;
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+.style_red {
+    color: #c81623 !important;
+}
+
+.shortcut .fr ul li:nth-child(even) {
+    height: 12px;
+    width: 1px;
+    margin: 10px 18px;
+    background-color: #666666;
+}
+
+.arrow-icon::after {
+    /* font-family: 'icomoon';
+    content: "\e922";
+    margin-left: 8px; */
+    font-family: 'iconfont';
+    content: "\e7b2";
+    /*阿里用分号前4位*/
+    margin-left: 8px;
+}
+
+/* header 头部制作 */
+.header {
+    position: relative;
+    height: 105px;
+}
+
+.logo a {
+    position: absolute;
+    top: 26px;
+    width: 180px;
+    height: 60px;
+    background-color: skyblue;
+}
+
+.logo a {
+    display: block;
+    /*  这是不用设置，图片也可以自动撑开盒子 */
+    width: 180px;
+    height: 60px;
+    background: url(../images/品优购.png) no-repeat;
+    /* font-size: 0; 京东的做法 */
+    /* 淘宝的做法让文字隐藏 */
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.search {
+    position: absolute;
+    top: 25px;
+    left: 348px;
+    width: 538px;
+    height: 35px;
+    border: 2px solid #b1191a;
+}
+
+.search input {
+    float: left;
+    width: 456px;
+    height: 31px;
+    padding-left: 10px;
+}
+
+.search button {
+    float: left;
+    width: 78px;
+    height: 31px;
+    background-color: #b1191a;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.hotwords {
+    position: absolute;
+    top: 69px;
+    left: 348px;
+}
+
+.hotwords a {
+    margin: 0 12px;
+    font-size: 12px;
+}
+
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 63px;
+    width: 141px;
+    height: 36px;
+    background-color: #f7f7f7;
+    text-align: center;
+    line-height: 36px;
+    font-size: 12px;
+}
+
+.shopcar::before {
+    font-family: 'iconfont';
+    content: '\e611';
+    margin-right: 5px;
+    color: #b1191a;
+}
+
+.shopcar::after {
+    font-family: 'iconfont';
+    content: '\e743';
+    margin-left: 10px;
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 5px;
+    border-radius: 8px 8px 8px 0;
+    background-color: #e60012;
+    color: #ffffff;
+}
+
+/* nav导航部分制作 */
+.nav {
+    height: 48px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.dropdown {
+    float: left;
+    width: 210px;
+    height: 47px;
+}
+
+.navitems {
+    float: left;
+}
+
+.navitems ul {
+    margin: 0 10px;
+}
+
+.navitems ul li {
+    float: left;
+}
+
+.navitems ul li a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 25px;
+}
+
+.dropdown .dt {
+    width: 210px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 16px;
+    background-color: #b1191a;
+    color: #ffffff;
+}
+
+.dropdown .dd {
+    /* display: none; */
+    width: 210px;
+    height: 465px;
+    margin-top: 2px;
+    background-color: #c81623;
+}
+
+.dropdown .dd ul li {
+    width: 210px;
+    height: 31px;
+    padding-left: 10px;
+    margin-left: 2px;
+    line-height: 31px;
+    color: #ffffff;
+    transition: all .5s;
+}
+
+.dropdown .dd ul li::after {
+    float: right;
+    font-family: 'iconfont';
+    content: '\e743';
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+.dropdown .dd ul li:hover::after {
+    color: #c81623;
+}
+
+.dropdown .dd ul li:hover {
+    background-color: #ffffff;
+}
+
+.dropdown .dd ul li a {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.dropdown .dd ul li:hover a {
+    color: #c81623;
+}
+
+.footer {
+    height: 420px;
+    padding-top: 30px;
+    background-color: #f5f5f5;
+}
+
+.mod_service {
+    height: 80px;
+    border-bottom: 1px solid #ededed;
+}
+
+.mod_service ul li {
+    float: left;
+    width: 240px;
+    height: 50px;
+    padding-left: 37px;
+}
+
+.mod_service .blogo1 h5 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 7px;
+    background: url(../images/正品保障.png) no-repeat;
+}
+
+.mod_service .blogo2 h5 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 7px;
+    background: url(../images/极速物流.png) no-repeat;
+}
+
+.mod_service .blogo3 h5 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 7px;
+    background: url(../images/无忧售后.png) no-repeat;
+}
+
+.mod_service .blogo4 h5 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 7px;
+    background: url(../images/特色服务.png) no-repeat;
+}
+
+.mod_service .blogo5 h5 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 7px;
+    background: url(../images/帮助中心.png) no-repeat;
+}
+
+.service_txt {
+    margin-top: 5px;
+}
+
+.service_txt h4 {
+    font-size: 14px;
+}
+
+.service_txt p {
+    font-size: 12px;
+}
+
+.mod_help {
+    height: 190px;
+    border-bottom: 1px solid #ededed;
+    padding-top: 25px;
+    padding-left: 52px;
+}
+
+.mod_help dl {
+    float: left;
+    width: 200px;
+}
+
+.mod_help dl:last-child {
+    width: 95px;
+    text-align: center;
+}
+
+.mod_help dl dt {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.mod_help dl dd a {
+    font-size: 12px;
+}
+
+.mod_copyright {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 18px;
+
+}
+
+.mod_copyright a {
+    padding: 0 10px 0;
+}
